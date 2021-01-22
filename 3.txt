@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[5];  
+    int s=0;
+    for(int i=0;i<5;i++)
+    {
+        a[i]=rand()% 35+1;
+        cout<<a[i]<<"\t";
+    }
+    for(int i=0;i<5;i++)
+    
+    {
+        s=s+a[i];
+    
+    }
+    std::cout << "avg=" <<s/5.0<< std::endl;
+    int p=0;
+    for(int i=0;i<5;i++)
+       if(a[i]%2==0)
+        p=p+a[i];
+        std::cout <<"sum="<< p << std::endl;
+
+    return 0;
+    
+}
